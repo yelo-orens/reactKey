@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    font-family: 'Suisse Intl S Alt', -apple-system, 'Inter', system-ui, sans-serif;
+    transition: none;
+}
+
+.react-key-logo {
+    display: block;
+    font-size: 20px;
+    top: 21px;
+    left: 26px;
+    letter-spacing: -0.84px;
+    line-height: 1;
+    font-weight: 500;
+    font-style: normal;
+   
+}
+
+.text1, .text2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.text1 {
+    animation: fadeOutIn 0.5s infinite;
+}
+
+.text2 {
+    animation: fadeInOut 0.5s infinite;
+}
+
+@keyframes fadeOut {
+    to { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOutIn {
+    0% { opacity: 1; }
+    49% { opacity: 1; }
+    50% { opacity: 0; }
+    51% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    49% { opacity: 0; }
+    50% { opacity: 1; }
+    51% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#top-description {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px 30px 30px 30px;
+    width: 500px;
+    height: 450px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);   
+    position: relative;
+}
+
+h1 {
+   font-family: 'Suisse Intl S Alt', -apple-system, 'Inter', system-ui, sans-serif;
+   color: white;
+   font-size: 90px;
+   letter-spacing: -5.52px;
+   font-weight: 500;
+   line-height: 1;
+   position: relative;
+}
+
+.description-text {
+    font-family: 'Suisse Intl S Alt', -apple-system, 'Inter', system-ui, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 1.4;
+    
+    max-width: 350px;
+    margin: 30px 0 0 0;
+}
+
+.start-button {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 0;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Suisse Intl S Alt', -apple-system, 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.52px;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+}

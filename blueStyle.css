@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #1976d2;
+    color: white;
+    font-family: 'Suisse Intl S Alt', -apple-system, 'Inter', system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.reaction-time-display {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.reaction-label {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 10px 0;
+}
+
+.reaction-value {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.back-link {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}

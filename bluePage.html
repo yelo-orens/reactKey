@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Page</title>
+    <link rel="stylesheet" href="blueStyle.css">
+</head>
+<body>
+    <div class="content">
+  
+        <h1>You pressed the right key!</h1>
+        <div class="reaction-time-display">
+            <p class="reaction-label">Your Reaction Time:</p>
+            <p class="reaction-value"><span id="reactionTimeValue">0</span> ms</p>
+            <p class="feedback-message"><span id="feedbackMessage"></span></p>
+        </div>
+        <a href="reactionKey.html" class="back-link">Back to Reaction Key</a>
+    </div>
+
+    <script>
+        const reactionTime = localStorage.getItem('reactionTime');
+        if (reactionTime) {
+            document.getElementById('reactionTimeValue').textContent = reactionTime;
+            localStorage.removeItem('reactionTime');
+        }
+
+        if(reactionTime < 500){
+            document.getElementById('feedbackMessage').textContent = "Are you a F1 driver?";
+        }
+    
+        else if (reactionTime < 600) {
+            document.getElementById('feedbackMessage').textContent = "You will definitely catch the falling knife ";
+        }
+        else if (reactionTime < 700) {
+            document.getElementById('feedbackMessage').textContent = "You are just a Human, JUST A HUMAN";
+        }
+        else if (reactionTime < 800) {
+            document.getElementById('feedbackMessage').textContent = "Is this your first time typing on a keyboard?";
+        }
+        else if (reactionTime < 900) {
+            document.getElementById('feedbackMessage').textContent = "You should probably get a new keyboard";
+        }
+        else {
+            document.getElementById('feedbackMessage').textContent = "Reflex of a snail, a sloth, or a rock?";
+        }
+    </script>
+</body>
+</html>
